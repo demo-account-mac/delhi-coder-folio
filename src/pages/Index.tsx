@@ -250,15 +250,17 @@ const Index = () => {
                 </div>
               </div>
               <div className="flex gap-4 justify-center mt-8">
-                <Button variant="outline" size="sm" asChild>
+                <Button variant="outline" size="sm" className="text-white border-white hover:bg-white hover:text-slate-900" asChild>
                   <a href="https://github.com/Priyanshu-Mac" target="_blank" rel="noopener noreferrer">
                     <Github className="h-4 w-4 mr-2" />
                     GitHub
                   </a>
                 </Button>
-                <Button variant="outline" size="sm">
-                  <Linkedin className="h-4 w-4 mr-2" />
-                  LinkedIn
+                <Button variant="outline" size="sm" className="text-white border-white hover:bg-white hover:text-slate-900" asChild>
+                  <a href="https://www.linkedin.com/in/priyanshu1808/" target="_blank" rel="noopener noreferrer">
+                    <Linkedin className="h-4 w-4 mr-2" />
+                    LinkedIn
+                  </a>
                 </Button>
               </div>
             </div>
