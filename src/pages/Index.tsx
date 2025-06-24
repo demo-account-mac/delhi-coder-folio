@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -16,11 +15,15 @@ const Index = () => {
       title: "Tourify Listing App",
       description: "A comprehensive tour listing application built with the MERN stack, featuring user authentication, tour management, and booking capabilities.",
       tech: ["React", "Node.js", "MongoDB", "Express.js", "JavaScript"],
-      image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=250&fit=crop",
+      image: "/lovable-uploads/7067697e-fa4d-44a5-86f8-e8929c2e1e75.png",
       demo: "https://tourify-listing-app.onrender.com/",
-      github: "https://github.com/Priyanshu-Mac"
+      github: "https://github.com/Priyanshu-Mac/Tourify-booking-app.git"
     }
   ];
+
+  const scrollToContact = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
@@ -56,13 +59,15 @@ const Index = () => {
                 that deliver exceptional user experiences.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <Button size="lg" className="bg-blue-600 hover:bg-blue-700" onClick={scrollToContact}>
                   <Mail className="mr-2 h-4 w-4" />
                   Get In Touch
                 </Button>
-                <Button size="lg" variant="outline">
-                  <Github className="mr-2 h-4 w-4" />
-                  View Projects
+                <Button size="lg" variant="outline" asChild>
+                  <a href="https://github.com/Priyanshu-Mac" target="_blank" rel="noopener noreferrer">
+                    <Github className="mr-2 h-4 w-4" />
+                    View Projects
+                  </a>
                 </Button>
               </div>
             </div>
@@ -227,24 +232,24 @@ const Index = () => {
             <h2 className="text-4xl font-bold mb-4">Get In Touch</h2>
             <p className="text-lg text-slate-300">Let's discuss your next project</p>
           </div>
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
+          <div className="max-w-2xl mx-auto">
+            <div className="text-center">
               <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
               <div className="space-y-4">
-                <div className="flex items-center gap-4">
+                <div className="flex items-center justify-center gap-4">
                   <Mail className="h-5 w-5 text-blue-400" />
-                  <span>priyanshu@example.com</span>
+                  <span>priyanshu.getintouch@gmail.com</span>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center justify-center gap-4">
                   <Phone className="h-5 w-5 text-blue-400" />
-                  <span>+91 98765 43210</span>
+                  <span>+91-9318439101</span>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center justify-center gap-4">
                   <MapPin className="h-5 w-5 text-blue-400" />
                   <span>Delhi, India</span>
                 </div>
               </div>
-              <div className="flex gap-4 mt-8">
+              <div className="flex gap-4 justify-center mt-8">
                 <Button variant="outline" size="sm" asChild>
                   <a href="https://github.com/Priyanshu-Mac" target="_blank" rel="noopener noreferrer">
                     <Github className="h-4 w-4 mr-2" />
@@ -256,35 +261,6 @@ const Index = () => {
                   LinkedIn
                 </Button>
               </div>
-            </div>
-            <div>
-              <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
-              <form className="space-y-4">
-                <div>
-                  <input 
-                    type="text" 
-                    placeholder="Your Name" 
-                    className="w-full p-3 rounded-lg bg-slate-800 border border-slate-700 focus:border-blue-500 focus:outline-none"
-                  />
-                </div>
-                <div>
-                  <input 
-                    type="email" 
-                    placeholder="Your Email" 
-                    className="w-full p-3 rounded-lg bg-slate-800 border border-slate-700 focus:border-blue-500 focus:outline-none"
-                  />
-                </div>
-                <div>
-                  <textarea 
-                    rows={4} 
-                    placeholder="Your Message" 
-                    className="w-full p-3 rounded-lg bg-slate-800 border border-slate-700 focus:border-blue-500 focus:outline-none resize-none"
-                  ></textarea>
-                </div>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">
-                  Send Message
-                </Button>
-              </form>
             </div>
           </div>
         </div>
