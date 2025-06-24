@@ -6,35 +6,19 @@ import { Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Code, Database, Se
 
 const Index = () => {
   const skills = {
-    frontend: ["React", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"],
+    frontend: ["React", "JavaScript", "HTML5", "Tailwind CSS", "Bootstrap"],
     backend: ["Node.js", "Express.js", "MongoDB", "MySQL", "RESTful APIs"],
     tools: ["Git", "GitHub", "VS Code", "Postman", "npm", "Webpack"]
   };
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack MERN application with user authentication, product management, and payment integration.",
-      tech: ["React", "Node.js", "MongoDB", "Express.js", "Stripe API"],
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop",
-      demo: "#",
-      github: "#"
-    },
-    {
-      title: "Task Management App",
-      description: "Collaborative task management tool with real-time updates and team collaboration features.",
-      tech: ["React", "Node.js", "Socket.io", "MongoDB"],
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop",
-      demo: "#",
-      github: "#"
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Interactive weather application with location-based forecasts and beautiful data visualization.",
-      tech: ["React", "Weather API", "Chart.js", "CSS3"],
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=250&fit=crop",
-      demo: "#",
-      github: "#"
+      title: "Tourify Listing App",
+      description: "A comprehensive tour listing application built with the MERN stack, featuring user authentication, tour management, and booking capabilities.",
+      tech: ["React", "Node.js", "MongoDB", "Express.js", "JavaScript"],
+      image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=250&fit=crop",
+      demo: "https://tourify-listing-app.onrender.com/",
+      github: "https://github.com/Priyanshu-Mac"
     }
   ];
 
@@ -58,36 +42,28 @@ const Index = () => {
       {/* Hero Section */}
       <section className="pt-24 pb-16 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="flex-1 text-center lg:text-left">
-              <div className="animate-fade-in">
-                <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-                  Hi, I'm <span className="text-blue-600">Priyanshu</span>
-                </h1>
-                <h2 className="text-2xl lg:text-3xl text-slate-700 mb-6">
-                  Full Stack Web Developer
-                </h2>
-                <p className="text-lg text-slate-600 mb-8 max-w-2xl">
-                  Passionate 1st-year Computer Science student at Delhi Technological University, 
-                  specializing in MERN stack development. I create modern, responsive web applications 
-                  that deliver exceptional user experiences.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                  <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                    <Mail className="mr-2 h-4 w-4" />
-                    Get In Touch
-                  </Button>
-                  <Button size="lg" variant="outline">
-                    <Github className="mr-2 h-4 w-4" />
-                    View Projects
-                  </Button>
-                </div>
-              </div>
-            </div>
-            <div className="flex-1 lg:flex justify-center">
-              <div className="relative">
-                <div className="w-80 h-80 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full animate-pulse"></div>
-                <div className="absolute inset-0 w-80 h-80 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full animate-ping opacity-20"></div>
+          <div className="flex flex-col items-center text-center">
+            <div className="animate-fade-in">
+              <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
+                Hi, I'm <span className="text-blue-600">Priyanshu</span>
+              </h1>
+              <h2 className="text-2xl lg:text-3xl text-slate-700 mb-6">
+                Full Stack Web Developer
+              </h2>
+              <p className="text-lg text-slate-600 mb-8 max-w-2xl">
+                Passionate 1st-year Computer Science student at Delhi Technological University, 
+                specializing in MERN stack development. I create modern, responsive web applications 
+                that deliver exceptional user experiences.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                  <Mail className="mr-2 h-4 w-4" />
+                  Get In Touch
+                </Button>
+                <Button size="lg" variant="outline">
+                  <Github className="mr-2 h-4 w-4" />
+                  View Projects
+                </Button>
               </div>
             </div>
           </div>
@@ -101,39 +77,30 @@ const Index = () => {
             <h2 className="text-4xl font-bold text-slate-900 mb-4">About Me</h2>
             <p className="text-lg text-slate-600">Get to know more about my journey and passion</p>
           </div>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop&crop=face" 
-                alt="Priyanshu" 
-                className="w-full h-96 object-cover rounded-lg shadow-lg"
-              />
-            </div>
-            <div>
-              <h3 className="text-2xl font-semibold text-slate-900 mb-4">
-                Passionate Developer & Problem Solver
-              </h3>
-              <p className="text-slate-600 mb-6">
-                Currently pursuing my Bachelor's degree in Computer Science at Delhi Technological University, 
-                I'm deeply passionate about web development and creating innovative solutions. My journey in 
-                programming began with curiosity and has evolved into a strong foundation in full-stack development.
-              </p>
-              <p className="text-slate-600 mb-6">
-                I specialize in the MERN stack (MongoDB, Express.js, React, Node.js) and enjoy building 
-                applications that solve real-world problems. I'm always eager to learn new technologies 
-                and take on challenging projects that push my boundaries.
-              </p>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="text-center p-4 bg-blue-50 rounded-lg">
-                  <Code className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                  <p className="font-semibold text-slate-900">Frontend</p>
-                  <p className="text-sm text-slate-600">React & Modern CSS</p>
-                </div>
-                <div className="text-center p-4 bg-green-50 rounded-lg">
-                  <Server className="h-8 w-8 text-green-600 mx-auto mb-2" />
-                  <p className="font-semibold text-slate-900">Backend</p>
-                  <p className="text-sm text-slate-600">Node.js & Express</p>
-                </div>
+          <div className="max-w-4xl mx-auto text-center">
+            <h3 className="text-2xl font-semibold text-slate-900 mb-4">
+              Passionate Developer & Problem Solver
+            </h3>
+            <p className="text-slate-600 mb-6">
+              Currently pursuing my Bachelor's degree in Computer Science at Delhi Technological University, 
+              I'm deeply passionate about web development and creating innovative solutions. My journey in 
+              programming began with curiosity and has evolved into a strong foundation in full-stack development.
+            </p>
+            <p className="text-slate-600 mb-8">
+              I specialize in the MERN stack (MongoDB, Express.js, React, Node.js) and enjoy building 
+              applications that solve real-world problems. I'm always eager to learn new technologies 
+              and take on challenging projects that push my boundaries.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+              <div className="text-center p-6 bg-blue-50 rounded-lg">
+                <Code className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <p className="font-semibold text-slate-900 text-lg">Frontend</p>
+                <p className="text-slate-600">React & Modern CSS</p>
+              </div>
+              <div className="text-center p-6 bg-green-50 rounded-lg">
+                <Server className="h-12 w-12 text-green-600 mx-auto mb-4" />
+                <p className="font-semibold text-slate-900 text-lg">Backend</p>
+                <p className="text-slate-600">Node.js & Express</p>
               </div>
             </div>
           </div>
@@ -209,26 +176,30 @@ const Index = () => {
       <section id="projects" className="py-16 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">Featured Projects</h2>
-            <p className="text-lg text-slate-600">Some of my recent work</p>
+            <h2 className="text-4xl font-bold text-slate-900 mb-4">Featured Project</h2>
+            <p className="text-lg text-slate-600">My latest work</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="max-w-2xl mx-auto">
             {projects.map((project, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow group">
                 <div className="relative overflow-hidden">
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                    <Button size="sm" variant="secondary">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Demo
+                    <Button size="sm" variant="secondary" asChild>
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Demo
+                      </a>
                     </Button>
-                    <Button size="sm" variant="secondary">
-                      <Github className="h-4 w-4 mr-2" />
-                      Code
+                    <Button size="sm" variant="secondary" asChild>
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="h-4 w-4 mr-2" />
+                        Code
+                      </a>
                     </Button>
                   </div>
                 </div>
@@ -274,9 +245,11 @@ const Index = () => {
                 </div>
               </div>
               <div className="flex gap-4 mt-8">
-                <Button variant="outline" size="sm">
-                  <Github className="h-4 w-4 mr-2" />
-                  GitHub
+                <Button variant="outline" size="sm" asChild>
+                  <a href="https://github.com/Priyanshu-Mac" target="_blank" rel="noopener noreferrer">
+                    <Github className="h-4 w-4 mr-2" />
+                    GitHub
+                  </a>
                 </Button>
                 <Button variant="outline" size="sm">
                   <Linkedin className="h-4 w-4 mr-2" />
